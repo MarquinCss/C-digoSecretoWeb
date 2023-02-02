@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+	   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport">
+      <link rel="stylesheet" href="style.css">
+  	<title>Adivinhe o número</title>
+	</head>
+<body>
+<div class="containergame">
+<h1> Qual é o código secreto </h1>
+   <input type="text" id="chute">
+  <button class="jogar">Jogar</button>
+  <br> <br>
+  <button class="reset">Novo Jogo</button>
+  <div class="result"></div>
+  </div>
+  
+  <!--Js-->
+  <script>
+    var numeroSecreto = parseInt(Math.random() * 3001);
+    var botaoJogar = document.querySelector('.jogar');
+    var botaoReset = document.querySelector('.reset');
+    var input = document.querySelector('#chute');
+    var result = document.querySelector('.result');
+    botaoJogar.addEventListener('click', function() {
+      var chute = parseInt(input.value);
+  
+      if (chute === numeroSecreto) {
+        result.innerText = 'Acertou!';
+        botaoReset.style.display = 'block';
+      } else if (chute > numeroSecreto) {
+        result.innerText = 'Errou... O número secreto é menor';
+        setTimeout(function() {
+          result.innerText = '';
+        }, 3000);
+      } else if (chute < numeroSecreto) {
+        result.innerText = 'Errou... O número secreto é maior';
+        setTimeout(function() {
+          result.innerText = '';
+        }, 3000);
+      }
+    });
+    botaoReset.addEventListener('click', function() {
+      location.reload();
+    });
+  </script>
+</body>
+</html>

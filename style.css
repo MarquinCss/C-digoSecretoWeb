@@ -1,0 +1,91 @@
+
+  body {
+	  background-image:url("https://thumbs.gfycat.com/AcrobaticGoodnaturedBooby-size_restricted.gif");
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+	  display:flex;
+	  justify-content:center;
+	  align-items:center;
+	  	cursor:url("neon.cur"),auto;
+    }
+    .jogar {
+      padding: 10px 20px;
+      margin-top: 20px;
+	  
+    }
+	#timer {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 50px;
+      }
+    .result {
+      margin-top: 20px;
+      font-size: 32px;
+	  color:white;
+    text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black}
+	
+	h1{
+		font:800 2rem "Montserrat" ;
+		color:white;
+		text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black}
+
+		
+
+	  @keyframes animate {
+    to {
+      background-position: 200% center;
+    }
+  }
+	
+	input{
+		border-radius:20px;
+		text-align:center;
+		width:100px;
+		height:50px;
+		font-size:30px;
+		background-color:black;
+		color:white;
+		border:1px solid white;
+		caret-color:green;
+	}
+	
+	.containergame{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+		flex-direction:column;
+		border:2px solid white;
+		background-image:url("https://thumbs.dreamstime.com/b/sum%C3%A1rio-mesh-background-com-c%C3%A9rebro-fundo-das-linhas-e-formas-projeto-do-vetor-da-ilustra-o-abstrato-149457467.jpg");
+		background-size:100%;
+		border-radius:50px;
+		width:350px;
+		height:430px;
+		
+		
+	}
+	
+	button{
+		  -webkit-background-clip: padding-box;
+    color: white;
+	font-size:25px;
+	border-radius:30px;
+    background-image:url("https://thumbs.gfycat.com/SimplisticTestyCanvasback-size_restricted.gif")  ;
+	background-size:100%;
+  text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+	  border:2px solid white;
+	  }
+
+  button:hover {
+    transform: scale(1.1);
+	cursor:url("neonp.cur"), auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+
+		
+	
